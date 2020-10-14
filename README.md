@@ -46,10 +46,11 @@ This project is licensed under the MIT License - see the
 ## Citation
 
 Please cite roi-layout in your publications if it helps your research:
+
   @misc{roi_layout,
-    author =       {niovl},
-    title =        {{roi-layout: Redeploy The Roi Extracted From The Large Image}},
-    howpublished = {\url{https://github.com/niovl/roi_layout}},
-    year =         {2020}
+    Author = {niovl},
+    Title = {{roi-layout: Redeploy The Roi Extracted From The Large Image}},
+    Howpublished = {\url{https://github.com/niovl/roi_layout}},
+    Year = {2020}
   }
 
