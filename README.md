@@ -1,7 +1,7 @@
 <h1 align="center">
-<img src="images/roi.png" width="50%" /> <img src="images/layout.png" width="33%" /> 
+<img src="images/info.png" width="80%" />
 </h1>
-<h4 align="center"> (roi   &   roi-layout) </h4>
+<h4 align="center"> (Roi Layout & Bbox Map) </h4>
 
 <h3 align="center">
   Redeploy the roi extracted from the large image to the small image.
