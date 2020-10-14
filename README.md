@@ -32,17 +32,19 @@ $ ../bin/roi_layout
 
 ### Useage & Developing
 
+```
 - **How to get layout rects?** use get_layout().
 - **How to get layout image?** use get_layout_mat().
 - **How to infer layout result?** use TryLayout().
 - **How to map box in layout image to orignal image?** use MapLayoutBoxToROI().
+```
 
  If you want to get a different deployment shape, just fix the following sentence.
 
 ```c++
 
   /**
-   *  ROI_layout.cpp
+   * ROI_layout.cpp
    * void ROILayout::FindBestLocation(Rect &rect)
   **/
   float score = ratio_wh * ratio_area;  // Can be customized.
