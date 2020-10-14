@@ -7,6 +7,7 @@
   Redeploy the roi extracted from the large image to the small image.
 </h3>
 
+[![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 ## Description
 
 In the field of computer vision, there is often too much redundant information in large images. After preprocessing, the areas of human interest are relatively scattered, which is not conducive to centralized processing. We redeploy these areas to facilitate subsequent centralized processing.
@@ -18,6 +19,7 @@ In the field of computer vision, there is often too much redundant information i
 
     ubuntu == 16.4
     opencv == 3.3.1
+    python == 3.5
 
 
 ### Building && run
