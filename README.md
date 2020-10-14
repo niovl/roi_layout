@@ -30,7 +30,7 @@ $ cmake .. && make -j8
 $ ../bin/roi_layout
 ```
 
-### Useage & Developing
+### Useage && Developing
 
 
 - **How to get layout rects?** use get_layout().
