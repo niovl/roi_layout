@@ -7,7 +7,6 @@
   Redeploy the roi extracted from the large image to the small image.
 </h3>
 
-[![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 ## Description
 
 In the field of computer vision, there is often too much redundant information in large images. After preprocessing, the areas of human interest are relatively scattered, which is not conducive to centralized processing. We redeploy these areas to facilitate subsequent centralized processing.
@@ -53,8 +52,7 @@ $ ../bin/roi_layout
 
 ```
 
-## License
-
+## License [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 This project is licensed under the MIT License - see the
 [LICENSE.md](LICENSE.md) file for details.
 
