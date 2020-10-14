@@ -30,14 +30,25 @@ $ cmake .. && make -j8
 $ ../bin/roi_layout
 ```
 
-### Developing
+### Useage & Developing
 
- If you want to get a different deployment shape, just fix the following sentence, otherwise you can ignore this operation.
+- **How to get layout rects?** use get_layout().
+- **How to get layout image?** use get_layout_mat().
+- **How to infer layout result?** use TryLayout().
+- **How to map box in layout image to orignal image?** use MapLayoutBoxToROI().
 
-Function [void ROILayout::FindBestLocation(Rect &rect)] in ROI_layout.cpp:
+ If you want to get a different deployment shape, just fix the following sentence.
+
 ```c++
+
+  /**
+   *  ROI_layout.cpp
+   * void ROILayout::FindBestLocation(Rect &rect)
+  **/
   float score = ratio_wh * ratio_area;  // Can be customized.
+
 ```
+
 ## License
 
 This project is licensed under the MIT License - see the
