@@ -55,9 +55,9 @@ def load_image(file_path):
 
 
 def main():
-    inp = load_labelme('kite.json')
+    inp = load_labelme('../images/kite.json')
     print(len(inp))
-    ori = cv.imread('kite.jpg')
+    ori = cv.imread('../images/kite.jpg')
     tool = RectanglesLayout()
     tool.infer(inp)
     mat_ = np.zeros((tool.H, tool.W, 3), dtype=np.uint8)
