@@ -1,6 +1,8 @@
 '''
 niovl 2020-12
 '''
+
+
 class Point(object):
     def __init__(self, x_, y_):
         self.x = x_
