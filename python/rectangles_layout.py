@@ -17,7 +17,7 @@ class RectanglesLayout(object):
         self.candidates = list()
         self.shuffle = list()
         self.area_used = 0
-        self.gap = Point(3, 3)
+        self.gap = Point(3, 3) # Point(x, y) The distance between two adjacent ROIs in the x and y directions
         self.W = 0
         self.H = 0
 
@@ -89,7 +89,8 @@ class RectanglesLayout(object):
             r_ = Rectangle(r.x, r.y, r.width, r.height)
             self.find_best_loc(r_)
             self.layouted.append(r_)
-
+ 
+    ''' box in layout image, coordinates in the original image. '''
     def map_layout_box(self, box):
         bbox = Rectangle()
         p = box.center()
