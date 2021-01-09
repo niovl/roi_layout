@@ -25,7 +25,7 @@ In the field of computer vision, there is often too much redundant information i
     numpy
     ```
     
-* 2.Useage && Developing (*<u>see python/demo.py</u>*)
+* 2.Useage && Developing (<u>see python/demo.py</u>)
 
 
 ### C++
