@@ -38,7 +38,7 @@ $ cmake .. && make -j8
 $ ../bin/roi_layout
 ```
 
-* 2.Useage && Developing
+* 2.[Useage&&Developing](src/main.cpp)
 
 - **How to get layout rects?** use get_layout().
 - **How to get layout image?** use get_layout_mat().
