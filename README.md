@@ -26,7 +26,7 @@ In the field of computer vision, there is often too much redundant information i
     ```
     
 * 2.Useage && Developing 
- #see python/demo.py#
+ *see python/demo.py*
 
 ### C++
 * 1.Building && run
