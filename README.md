@@ -13,40 +13,12 @@ In the field of computer vision, there is often too much redundant information i
 
 ## note
 $$
-\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage{algorithm}
-\usepackage{algorithmic}
-
-\begin{document}
-
-\begin{algorithm} 
-    \caption{Rectangular layout} 
-    \label{alg3} 
-    \begin{algorithmic}
-        \REQUIRE $n \geq 0 \vee x \neq 0$ 
-        \ENSURE $y = x^n$ 
-        \STATE $y \gets 1$ 
-        \IF{$n < 0$} 
-        \STATE $X \gets 1 / x$ 
-        \STATE $N \gets -n$ 
-        \ELSE 
-        \STATE $X \gets x$ 
-        \STATE $N \gets n$ 
-        \ENDIF 
-        \WHILE{$N \neq 0$} 
-        \IF{$N$ is even} 
-        \STATE $X \gets X \times X$ 
-        \STATE $N \gets N / 2$ 
-        \ELSE[$N$ is odd] \STATE $y \gets y \times X$ 
-        \STATE $N \gets N - 1$ 
-        \ENDIF 
-        \ENDWHILE 
-    \end{algorithmic} 
-\end{algorithm}
-
-\end{document}
-
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
+\end{vmatrix}
+${$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}
 $$
 ## Getting Started
 
