@@ -15,6 +15,7 @@ In the field of computer vision, there is often too much redundant information i
 <h1 align="center">
 <img src="images/alg.png" width="60%" />
 </h1>
+
 ## Getting Started
 
 ### Requirements
