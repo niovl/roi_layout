@@ -11,6 +11,43 @@
 
 In the field of computer vision, there is often too much redundant information in large images. After preprocessing, the areas of human interest are relatively scattered, which is not conducive to centralized processing. We redeploy these areas to facilitate subsequent centralized processing.
 
+## note
+$$
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\begin{document}
+
+\begin{algorithm} 
+    \caption{Rectangular layout} 
+    \label{alg3} 
+    \begin{algorithmic}
+        \REQUIRE $n \geq 0 \vee x \neq 0$ 
+        \ENSURE $y = x^n$ 
+        \STATE $y \gets 1$ 
+        \IF{$n < 0$} 
+        \STATE $X \gets 1 / x$ 
+        \STATE $N \gets -n$ 
+        \ELSE 
+        \STATE $X \gets x$ 
+        \STATE $N \gets n$ 
+        \ENDIF 
+        \WHILE{$N \neq 0$} 
+        \IF{$N$ is even} 
+        \STATE $X \gets X \times X$ 
+        \STATE $N \gets N / 2$ 
+        \ELSE[$N$ is odd] \STATE $y \gets y \times X$ 
+        \STATE $N \gets N - 1$ 
+        \ENDIF 
+        \ENDWHILE 
+    \end{algorithmic} 
+\end{algorithm}
+
+\end{document}
+
+$$
 ## Getting Started
 
 ### Requirements
