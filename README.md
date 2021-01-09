@@ -18,21 +18,21 @@ In the field of computer vision, there is often too much redundant information i
 
 ## Getting Started
 
-### (python 3.5)
+### python 3.5
 * 1.Requirements
     ```
-    opencv == 3.3.1
+    opencv-python
     numpy
     ```
     
-* 2.Useage && Developing
+* 2.Useage && Developing 
  #see python/demo.py#
 
-### (C++) 
+### C++
 * 1.Building && run
-To build && run:
 
 ```
+#  opencv == 3.3.1
 $ mkdir build && cd build
 $ cmake .. && make -j8
 $ ../bin/roi_layout
