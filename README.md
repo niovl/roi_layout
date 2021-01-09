@@ -18,16 +18,18 @@ In the field of computer vision, there is often too much redundant information i
 
 ## Getting Started
 
-### Requirements
-
-
-    ubuntu == 16.4
+### (python 3.5)
+* 1.Requirements
+    ```
     opencv == 3.3.1
-    python == 3.5
+    numpy
+    ```
+    
+* 2.Useage && Developing
+ #see python/demo.py#
 
-
-### Building && run
-
+### (C++) 
+* 1.Building && run
 To build && run:
 
 ```
@@ -36,8 +38,7 @@ $ cmake .. && make -j8
 $ ../bin/roi_layout
 ```
 
-### Useage && Developing
-
+* 2.Useage && Developing
 
 - **How to get layout rects?** use get_layout().
 - **How to get layout image?** use get_layout_mat().
