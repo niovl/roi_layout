@@ -63,9 +63,6 @@ This project is licensed under the MIT License - see the
 [LICENSE.md](LICENSE.md) file for details.
 
 
-- [x] Nio
-- [ ] VL
-
 ## Citation
 
 Please cite roi-layout in your publications if it helps your research:
