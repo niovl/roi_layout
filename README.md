@@ -45,7 +45,7 @@ $ ../bin/roi_layout
 - **How to infer layout result?** use TryLayout().
 - **How to map box in layout image to orignal image?** use MapLayoutBoxToROI().
 
- If you want to get a different deployment shape, just fix the following sentence in [file](src/ROI_layout.cpp#L788).
+ If you want to get a different deployment shape, just fix the following sentence in [file](src/ROI_layout.cpp#L36).
 
 ```c++
 
