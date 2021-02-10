@@ -1,21 +1,14 @@
 # include "utils.h"
-#define PI    3.1415926535897932384626433832795
-#define PI2   PI*PI
-#define RAD2DEG(angle) (angle*float(180.0/PI))
 
 
-float get_v(int a, int b) {
+template < typename Dtype> 
+double get_v(Dtype a, int b) {
     int mx = a > b? a: b;
     int mi = a <= b? a: b;
     return mi / float(mx);
 }
 
 
-/**
- * @brief computing the intersection over the union.
- *
- * computes the complement of the iou as described in <https://en.wikipedia.org/wiki/Jaccard_index>.
- */
 template<typename Dtype> static inline
 double intersectionOverUnion(const Rect_<Dtype>& a, const Rect_<Dtype>& b) {
     Dtype Aa = a.area();
@@ -29,12 +22,10 @@ double intersectionOverUnion(const Rect_<Dtype>& a, const Rect_<Dtype>& b) {
     return An / (Aa + Ab - An);
 }
 
+// double(* abc)(const Rect_<Dtype>& a, const Rect_<Dtype>& b) = generalizedIntersectionOverUnion;
+// abc = distancIntersectionOverUnion;
+// abc()
 
-/**
- * @brief optimize in the case of non-overlapping bounding boxes.
- *
- * computes the complement of the giou as described in <https://arxiv.org/pdf/1902.09630.pdf>.
- */
 template<typename Dtype> static inline
 double generalizedIntersectionOverUnion(const Rect_<Dtype>& a, const Rect_<Dtype>& b) {
     Dtype Aa = a.area();
@@ -51,11 +42,6 @@ double generalizedIntersectionOverUnion(const Rect_<Dtype>& a, const Rect_<Dtype
 }
 
 
-/**
- * @brief incor-porating the normalized distance between the predicted boxand the target box.
- *
- * computes the complement of the diou as described in <https://arxiv.org/pdf/1911.08287.pdf>.
- */
 template<typename Dtype> static inline
 double distancIntersectionOverUnion(const Rect_<Dtype>& a, const Rect_<Dtype>& b) {
     Dtype Aa = a.area();
@@ -73,11 +59,6 @@ double distancIntersectionOverUnion(const Rect_<Dtype>& a, const Rect_<Dtype>& b
 }
 
 
-/**
- * @brief Summarize overlap area, central point distance and aspect ratio.
- *
- * Complete IoU: in <https://arxiv.org/pdf/1911.08287.pdf>.
- */
 template<typename Dtype> static inline
 double completeIntersectionOverUnion(const Rect_<Dtype>& a, const Rect_<Dtype>& b) {
     Dtype Aa = a.area();
@@ -100,7 +81,7 @@ double completeIntersectionOverUnion(const Rect_<Dtype>& a, const Rect_<Dtype>& 
 
 
 template < typename Dtype> 
-vector< size_t>  sort_indexes(const vector< Dtype>  &v) {
+vector< size_t>  sort_indexes(const vector<Dtype>  &v) {
   // initialize original index locations
   vector< size_t>  idx(v.size());
   for (size_t i = 0; i != idx.size(); ++i) idx[i] = i;
@@ -111,3 +92,6 @@ vector< size_t>  sort_indexes(const vector< Dtype>  &v) {
 
   return idx;
 }
+
+
+
