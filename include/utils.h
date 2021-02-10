@@ -17,8 +17,11 @@ using namespace std;
 using namespace cv;
 
 
-template < typename Dtype> vector<size_t>  sort_indexes(const vector<Dtype>  &v);
-float get_v(int a, int b);
+template <typename Dtype> 
+vector<size_t> sort_indexes(const vector<Dtype> &v);
+
+template < typename Dtype> 
+double get_v(Dtype a, Dtype b);
 
 
 /**
