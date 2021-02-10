@@ -57,6 +57,12 @@ $ ../bin/roi_layout
 
 ```
 
+## TODO
+- *C++ version adds gap*
+- *Support merge Adjacent rectangle*
+- *Replace IOU with CIOU*
+
+
 ## License [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
 This project is licensed under the MIT License - see the
 [LICENSE.md](LICENSE.md) file for details.
