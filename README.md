@@ -61,6 +61,7 @@ $ ../bin/roi_layout
 - *C++ version adds gap*
 - *Support merge Adjacent rectangle*
 - *Replace IOU with [CIOU]( https://arxiv.org/pdf/1911.08287.pdf)*
+- *Expand rectangle*
 
 
 ## License [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
