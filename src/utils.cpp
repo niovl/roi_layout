@@ -2,10 +2,8 @@
 
 
 template < typename Dtype> 
-double get_v(Dtype a, int b) {
-    int mx = a > b? a: b;
-    int mi = a <= b? a: b;
-    return mi / float(mx);
+double get_v(Dtype a, Dtype b) {
+    return double(std::min(a, b)) / std::max(a, b);
 }
 
 
