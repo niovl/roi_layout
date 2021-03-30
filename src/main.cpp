@@ -1,10 +1,20 @@
 #include "ROI_layout.h"
+#include "Cluster.h"
 #include <iostream>
 #include <opencv/cv.h>
 #include <opencv2/opencv.hpp>
 
 using namespace std;
 using namespace cv;
+
+int testCluster(vector<Rect> rects, Mat mat) {
+    Cluster cluster(mat.size(), Size(7, 7));
+    cluster.do_cluster(rects);
+    cluster.show(mat, 0x05);
+    //showRects(regions, mat);
+    return 0;
+}
+
 
 // {82, 508, 18, 58}
 int main() {
@@ -43,6 +53,7 @@ int main() {
     // cout << roi << endl;
 
     rectangle(mat, roi, Scalar(255, 0, 127), 1, 8);
+    // testCluster(rects, mat);
     imshow("roi.jpg", mat);
     // imwrite("iou.png", r_mat);
     waitKey(0);
